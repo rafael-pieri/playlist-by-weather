@@ -21,4 +21,4 @@ It will available at: `http://localhost:8091`
 ```http://localhost:8091/swagger-ui.html```
 
 ### Postman Collection
-Import file from ```/postman```
+Import the file ```/postman/playlist-by-weather.postman_collection.json```
