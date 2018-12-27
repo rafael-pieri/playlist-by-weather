@@ -19,3 +19,6 @@ It will available at: `http://localhost:8091`
 
 ### Swagger UI
 ```http://localhost:8091/swagger-ui.html```
+
+### Postman Collection
+Import file from ```/postman```
