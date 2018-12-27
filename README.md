@@ -13,7 +13,7 @@ It is a micro-service able to accept RESTful requests receiving as parameter eit
 
 Execute the following command to deploy the application:
 
-`docker-compose up`
+`sh initialize.sh`
 
 It will available at: `http://localhost:8091`
 
