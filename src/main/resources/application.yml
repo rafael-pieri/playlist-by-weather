@@ -1,0 +1,49 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: playlist-by-weather
+  jackson:
+    default-property-inclusion: non_null
+  cache:
+    type: redis
+    redis:
+      time-to-live: 300000
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+#    docker run --name some-redis -d redis
+
+
+swagger:
+  title: Music By the weather of your location
+  description: Provide your localization and and you will have the best playlists to listen to!
+  version: 0.0.1
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+
+openWeatherMap:
+  appId: 37747c2542b011bae23584afa2c0049a
+  url: http://api.openweathermap.org/data/2.5/weather
+  unit: metric
+
+hgBrasil:
+  id: c862c959
+  url: http://api.hgbrasil.com/weather/
+  headerRequest:
+    userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+
+spotifyApi:
+  clientId: ef4707011f004883b356ca29c3b5329f
+  clientSecret: 72b5375bfc894016a4d664fa283c0721
+
+deezer:
+  url: https://api.deezer.com
