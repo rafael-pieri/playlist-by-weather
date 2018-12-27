@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "15694982-fc7a-41af-a21d-a016c199f8a0",
+		"name": "Playlist-By-Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve playlist by nameCIty and country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8091/api/v1/playlist?nameCity=Americana&country=br&index=0&limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"v1",
+						"playlist"
+					],
+					"query": [
+						{
+							"key": "nameCity",
+							"value": "Americana"
+						},
+						{
+							"key": "country",
+							"value": "br"
+						},
+						{
+							"key": "index",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve playlist by latitude and longitude",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8091/api/v1/playlist?latitude=51.5072&longitude=-0.1275&index=0&limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"v1",
+						"playlist"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "51.5072"
+						},
+						{
+							"key": "longitude",
+							"value": "-0.1275"
+						},
+						{
+							"key": "index",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
