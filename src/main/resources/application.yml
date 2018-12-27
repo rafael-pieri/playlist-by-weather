@@ -11,10 +11,8 @@ spring:
     redis:
       time-to-live: 300000
   redis:
-    host: 127.0.0.1
+    host: ${REDIS_HOST}
     port: 6379
-
-#    docker run --name some-redis -d redis
 
 
 swagger:

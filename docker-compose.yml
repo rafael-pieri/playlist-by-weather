@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    image: playlist-by-weather:latest
+    ports:
+      - 8091:8091
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+  redis:
+    image: redis:5.0.3-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: redis
