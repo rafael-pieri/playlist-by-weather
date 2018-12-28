@@ -17,7 +17,7 @@ spring:
 
 swagger:
   title: Music By the weather of your location
-  description: Provide your localization and and you will have the best playlists to listen to!
+  description: Provide your localization and you will have the best playlists to listen to!
   version: 0.0.1
 
 hystrix:
