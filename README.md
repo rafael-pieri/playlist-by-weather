@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rafael-pieri/playlist-by-weather.svg?branch=master)](https://travis-ci.com/rafael-pieri/playlist-by-weather)
+
 # Overview
 
 It is a micro-service able to accept RESTful requests receiving as parameter either city name or lat long coordinates and returns a playlist suggestion according to the current temperature.
